@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== Header & Navigation ===== */
+
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #d1d5db;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+}
+
+/* ===== Sticky Navigation ===== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===== Home Section ===== */
+
+#home {
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+.hero-content h3 {
+    font-size: 1.4rem;
+    color: #2563eb;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    margin-top: 40px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* ===== Education Section ===== */
+
+#education {
+    background-color: #ffffff;
+}
+
+#education h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1f2937;
+}
+
+.education-item {
+    background-color: #f9fafb;
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.education-item h3 {
+    color: #2563eb;
+    font-size: 1.5rem;
+}
+
+.education-item p {
+    color: #4b5563;
+}
+
+/* ===== Skills Section ===== */
+
+#skills {
+    background-color: #f5f7fa;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1f2937;
+}
+
+.skill-category {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.skill-category h3 {
+    color: #2563eb;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.skill-category li {
+    color: #4b5563;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.skill-category li:last-child {
+    border-bottom: none;
+}
+
+/* ===== Certifications & Achievements Section ===== */
+
+#certifications {
+    background-color: #ffffff;
+}
+
+#certifications h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1f2937;
+}
+
+.achievement-card {
+    background-color: #f9fafb;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+.achievement-card h3 {
+    color: #2563eb;
+    font-size: 1.5rem;
+}
+
+.achievement-card p {
+    color: #4b5563;
+}
+
+.achievement-card a {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.achievement-card a:hover {
+    background-color: #1d4ed8;
+}
+
+/* ===== Contact Section ===== */
+
+#contact {
+    background-color: #f5f7fa;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.2rem;
+    color: #1f2937;
+}
+
+#contact p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: #4b5563;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Skills Layout ===== */
+
+#skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#skills h2 {
+    grid-column: 1 / -1;
+}
+
+.skill-category {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons a {
+        display: block;
+        margin: 15px auto;
+        width: fit-content;
+    }
+
+    .skill-category,
+    .achievement-card,
+    .education-item {
+        width: 100%;
+    }
+}
+
+/* ===== Smooth Animations ===== */
+
+section {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
