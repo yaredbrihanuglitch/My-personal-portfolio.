@@ -261,6 +261,7 @@ header {
 .achievement-card a:hover {
     background-color: #1d4ed8;
 }
+.achievement-card h3 { color: #2563eb; font-size: 1.5rem; } .achievement-card a { display: inline-block; margin-top: 15px; background-color: #2563eb; color: white; padding: 10px 20px; border-radius: 6px; font-weight: bold; transition: 0.3s; } .achievement-card a:hover { background-color: #1d4ed8; }
 
 /* ===== Contact Section ===== */
 
